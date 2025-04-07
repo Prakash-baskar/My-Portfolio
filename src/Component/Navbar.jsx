@@ -1,20 +1,31 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const MyNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleScroll = (e, sectionId) => {
     e.preventDefault();
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    setIsOpen(false); // Close menu after clicking a link
   };
 
   return (
     <nav className="navbar sticky-top">
       <div className="container">
         <div className="brand">Prakash Baskar</div>
-        <div className="nav-links">
+
+        {/* Hamburger Menu Icon */}
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <i className="fas fa-bars"></i>
+        </div>
+
+        {/* Navigation Links */}
+        <div className={`nav-links ${isOpen ? "active" : ""}`}>
           <a
             href="#Home"
             onClick={(e) => handleScroll(e, "Home")}
@@ -43,7 +54,6 @@ const MyNavbar = () => {
           >
             Skills
           </a>
-
           <a
             href="#Contact"
             onClick={(e) => handleScroll(e, "Contact")}

@@ -1,57 +1,113 @@
-.custom-link {
-    color: rgb(237, 237, 241) !important; /* Change color to blue */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
-}
-
-.custom-link:hover {
-  color: rgb(127, 183, 252) !important; 
-  text-decoration: none; /* Add underline */
-  background-color: rgb(31, 181, 226);
-  border-radius: 10px;
-
-
-}
 /* Navbar Styles */
 .navbar {
   position: sticky;
   top: 0;
-  padding: 10px;
-  width: 100%;
-  background: rgb(34, 33, 33); /* or any background color */
-  z-index: 1000; /* Ensures it's above other elements */
+  padding: 12px 20px;
+  background: #1E1E2F; /* Dark Blue-Gray */
+  z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Container */
 .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
+/* Branding */
 .brand {
-  font-size: 20px;
-  font-weight: 500;
-  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  color: #F4A261; /* Warm Orange */
+  text-transform: uppercase;
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .custom-link {
-  color: white;
+  color: #FFFFFF; /* White */
   text-decoration: none;
   font-size: 16px;
   padding: 8px 12px;
   border-radius: 5px;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .custom-link:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #2A2A40; /* Slightly Lighter Dark Blue-Gray */
+  color: #E76F51; /* Muted Red */
+}
+
+/* Hamburger Menu (For Mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover {
+    background-color: #2A2A40; /* Lighter Dark Blue-Gray */
+  }
+  
+  .hamburger i {
+    font-size: 24px;
+    color: #F4A261; /* Warm Orange */
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #2A2A40;
+    padding: 10px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    
+  }
+
+  .custom-link {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .custom-link:hover {
+    background-color: #F4A261; /* Warm Orange */
+    color: #1E1E2F; /* Dark Background */
+  }
 }

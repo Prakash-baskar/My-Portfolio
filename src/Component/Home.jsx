@@ -1,15 +1,19 @@
 import "./Home.css";
 import resume from "../Assets/Prakash Baskar_page-0001.jpg";
-
+// import profile from "../Assets/profile.jpg";
 const Home = () => {
   return (
-    <div className="home-container"  id="Home">
-      {/* Profile Image */}
-      <img 
-        src="https://via.placeholder.com/150" 
-        // alt="Prakash" 
-        className="profile-image"
-      />
+    
+   <div id="Home">
+       <div className="home-container pt-5">
+        <div className="pt-5">
+         <img 
+          //  src={profile}
+           className="profile-image-home"
+          //  alt="Prakash"
+         />
+        </div>
+     
       
       {/* Name & Title */}
       <h1 className="name">Prakash</h1>
@@ -23,12 +27,9 @@ const Home = () => {
 
       {/* Buttons */}
       <div className="button-group">
-        {/* Download CV Button */}
         <a href={resume} download="Prakash Baskar.pdf" className="cv-button">
           Download CV
         </a>
-
-        {/* LinkedIn Profile Button */}
         <a 
           href="https://www.linkedin.com/in/prakash-baskar-b2a5b32b8/" 
           target="_blank" 
@@ -39,6 +40,7 @@ const Home = () => {
         </a>
       </div>
     </div>
+   </div>
   );
 };
 

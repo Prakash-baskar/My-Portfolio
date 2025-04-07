@@ -35,8 +35,9 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className="contact-container">
-      <h2>Contact Me</h2>
+   <div id="Contact">
+        <div  className="contact-container pt-4">
+        <h2 className="contact-title pt-5">Contact</h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <input
           type="text"
@@ -72,6 +73,7 @@ const Contact = () => {
         <button type="submit">Send to WhatsApp</button>
       </form>
     </div>
+   </div>
   );
 };
 

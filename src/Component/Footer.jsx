@@ -1,22 +1,24 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white text-center py-4">
-      <p className="mb-3">&copy; 2025 Your Company. All rights reserved.</p>
+    <footer className="d-flex flex-column align-items-center bg-black text-white text-center py-4">
+      <p className="mb-3">&copy;All rights reserved by @prakash_baskar</p>
 
       {/* Social Media Icons */}
-      <div>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black mx-2">
+      <div className="d-flex gap-3">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-facebook fa-lg"></i>
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-twitter fa-lg"></i>
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-instagram fa-lg"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-linkedin fa-lg"></i>
         </a>
       </div>

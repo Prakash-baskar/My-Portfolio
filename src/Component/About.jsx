@@ -2,16 +2,17 @@ import "./About.css"; // Import the CSS file
 
 const About = () => {
   return (
-    <div id="About" className="about-container">
-      <h2 className="About-title">About</h2>
+   <div id="About">
+     <div  className="about-container pt-5">
+      <h2 className="about-title pt-5">About</h2>
       <div className="profile-section">
-        <img
+        {/* <img
           src="https://via.placeholder.com/150" // Replace with your profile image
           alt="Prakash Baskar"
           className="profile-image"
-        />
+        /> */}
         <h1 className="profile-name">Prakash Baskar</h1>
-        <h2 className="profile-title">React Developer | Frontend Engineer</h2>
+        <h2 className="profile-title">React Developer | Frontend Developer</h2>
       </div>
 
       {/* About Description */}
@@ -32,11 +33,12 @@ const About = () => {
         <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="btn linkedin">
           🔗 LinkedIn
         </a>
-        <a href="mailto:your.email@example.com" className="btn email">
+        <a href="mailto:prakashprakas2000@gmail.com" className="btn email">
           📧 Email Me
         </a>
       </div>
     </div>
+   </div>
   );
 };
 

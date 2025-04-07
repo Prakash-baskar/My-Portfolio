@@ -2,7 +2,8 @@ import "./Project.css";
 
 const Project = () => {
   return (
-    <div className="p-4" id="Projects">
+   <div id="Projects">
+       <div className="pt-5" >
       <h2 className="project-title">Projects</h2>
       
       <div className="mb-6">
@@ -23,6 +24,7 @@ const Project = () => {
         </ul>
       </div>
     </div>
+   </div>
   );
 };
 
