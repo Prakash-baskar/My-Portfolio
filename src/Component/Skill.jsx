@@ -4,12 +4,16 @@ import "./Skill.css";
 const skills = [
   { name: "React", level: 80 },
   { name: "JavaScript", level: 75 },
-  { name: "Redux", level: 70 },
+  { name: "Redux", level: 75 },
   { name: "CSS", level: 90 },
   { name: "TypeScript", level: 65 },
   { name: "HTML", level: 95 },
   { name: "Bootstrap", level: 80 },
-  { name: "Firebase", level: 50 },
+  { name: "Firebase", level: 65 },
+  { name: "Jquery", level: 50},
+  { name: "GitHub", level: 80 },
+  { name: "Ajax", level: 50 },
+ 
 ];
 
 const Skill = () => {
@@ -30,9 +34,9 @@ const Skill = () => {
   }, []);
 
   return (
-    <div className="skill-container" id="Skill">
-      <h2 className="skill-title">My Skills</h2>
-      <div className="skill-grid">
+    <div className="skill-container pt-5" id="Skill">
+      <h2 className="skill-title pt-5">My Skills</h2>
+      <div className="skill-grid pt-5">
         {skills.map((skill, index) => (
           <div key={index} className="skill">
             <p className="skill-name">{skill.name}</p>

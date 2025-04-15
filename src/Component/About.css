@@ -1,6 +1,5 @@
 /* Base styles for larger screens */
 .about-container {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,17 +7,16 @@
   text-align: center;
   background-color: #f9f9f9;
   padding: 35px;
- 
 }
 
 .about-title {
   font-size: 1.75rem;
   font-weight: 600;
-  color: #2c3e50; /* Dark Blue (Professional Look) */
+  color: #2c3e50;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 3px solid #3498db; /* Accent color */
+  border-bottom: 3px solid #3498db;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -52,6 +50,7 @@
   margin-top: 10px;
   color: #555;
   font-size: 16px;
+  padding: 0 10px;
 }
 
 .info-section {
@@ -106,17 +105,18 @@
 /* Mobile responsive styles */
 @media only screen and (max-width: 768px) {
   .about-container {
-    padding: 20px;
+    padding: 20px 15px;
   }
 
-  .About-title {
-    font-size: 1.2rem;
-    padding-top: 80px;
+  .about-title {
+    font-size: 1.4rem;
+    padding-top: 60px;
+    margin-bottom: 1rem;
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .profile-name {
@@ -124,27 +124,71 @@
   }
 
   .profile-title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .about-description {
-    max-width: 100%;
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .info-section {
     font-size: 14px;
+    margin-top: 15px;
+  }
+
+ 
+}
+
+/* Extra Mobile Responsive Styles for very small devices (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .about-container {
+    padding: 15px 10px;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+    padding-top: 50px;
+    margin-bottom: 0.8rem;
+  }
+
+  .profile-image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .profile-name {
+    font-size: 18px;
+  }
+
+  .profile-title {
+    font-size: 13px;
+  }
+
+  .about-description {
+    font-size: 13px;
+    margin-top: 8px;
+    padding: 0 5px;
+  }
+
+  .info-section {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .info-section p {
+    margin: 4px 0;
   }
 
   .button-container {
     flex-direction: column;
+    width: 100%;
     gap: 10px;
   }
 
   .btn {
+    font-size: 13px;
+    padding: 10px;
     width: 100%;
-    padding: 12px;
-    font-size: 14px;
   }
 }

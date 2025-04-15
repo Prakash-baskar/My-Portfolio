@@ -1,59 +1,97 @@
 /* Project Section Styles */
 #Projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* height: 100vh; */
-    padding: 35px;
-    text-align: center;
-    background: #f4f4f4;
-  }
-  
-  .project-title {
-    font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.project-title {
+  font-size: 1.75rem;
   font-weight: 600;
-  color: #2c3e50; /* Dark Blue (Professional Look) */
+  color: #2c3e50;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 3px solid #3498db; /* Accent color */
+  border-bottom: 3px solid #3498db;
   display: inline-block;
   padding-bottom: 5px;
+}
+
+.project-head {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-para {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  display: inline-block;
+  position: relative;
+  padding-left: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  #Projects {
+    padding: 20px;
   }
-  
-  .project-head {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-para{
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  li {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem 1rem;
-    background: #f0f0f0;
-    border-radius: 8px;
-    display: inline-block;
-    position: relative;
-    padding-left: 2rem;
-  }
-  
-  li::before {
-    content: '\2022'; /* Unicode for bullet point */
-    color: #007bff;
+
+  .project-title {
     font-size: 1.5rem;
-    position: absolute;
-    left: 0.5rem;
-    top: 50%;
-    transform: translateY(-50%);
   }
-  
+
+  .project-head {
+    font-size: 1.1rem;
+  }
+
+  .project-para {
+    font-size: 0.95rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-head {
+    font-size: 1rem;
+  }
+
+  .project-para {
+    font-size: 0.9rem;
+  }
+
+  li {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

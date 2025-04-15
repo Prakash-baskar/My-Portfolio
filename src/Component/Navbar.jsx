@@ -20,12 +20,12 @@ const MyNavbar = () => {
         <div className="brand">Prakash Baskar</div>
 
         {/* Hamburger Menu Icon */}
-        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <div className="hamburger"  onClick={() => setIsOpen(!isOpen)}>
           <i className="fas fa-bars"></i>
         </div>
 
         {/* Navigation Links */}
-        <div className={`nav-links ${isOpen ? "active" : ""}`}>
+        <div className={`nav-links  ${isOpen ? "active" : ""}`}>
           <a
             href="#Home"
             onClick={(e) => handleScroll(e, "Home")}

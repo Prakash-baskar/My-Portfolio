@@ -100,3 +100,47 @@
     padding: 8px 16px;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .home-container {
+    padding: 20px 10px;
+  }
+
+  .profile-image-home {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3b82f6;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .name {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .bio {
+    font-size: 13px;
+    max-width: 100%;
+    padding: 0 5px;
+    margin-top: 8px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .cv-button,
+  .linkedin-button {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+  }
+}

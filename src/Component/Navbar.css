@@ -42,8 +42,8 @@
 }
 
 .custom-link:hover {
-  background-color: #2A2A40; /* Slightly Lighter Dark Blue-Gray */
-  color: #E76F51; /* Muted Red */
+  background-color: #F4A261; /* Slightly Lighter Dark Blue-Gray */
+
 }
 
 /* Hamburger Menu (For Mobile) */
@@ -51,6 +51,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  border: 1px solid rgb(122, 122, 122);
 }
 
 .bar {
