@@ -1,11 +1,20 @@
 /* Contact Form Container */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .contact-container {
   width: 100%;
   max-width: 500px;
-  margin: 50px auto;
+  margin: auto auto;
   padding: 0 1rem;
   border-radius: 8px;
   text-align: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#Contact{
+  background: #f4f4f4;
 }
 
 .contact-title {
@@ -18,24 +27,27 @@
   border-bottom: 3px solid #3498db;
   display: inline-block;
   padding-bottom: 5px;
+  
 }
 
 /* Contact Form */
 .contact-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 /* Input and Textarea Styles */
 .contact-form input,
 .contact-form textarea {
-  padding: 12px;
-  margin-bottom: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 18px;
   outline: none;
   transition: border-color 0.3s ease-in-out;
+  width: 100%;
 }
 
 /* Focus Effect */
@@ -67,42 +79,52 @@
   color: white;
 }
 
-/* ✅ Responsive for tablets */
+/* ✅ Responsive for Tablets */
 @media (max-width: 768px) {
   .contact-container {
     max-width: 90%;
+    margin: auto auto;
+    padding:  2rem;
   }
 
   .contact-title {
     font-size: 1.5rem;
+    margin-bottom: 1.2rem;
   }
 
   .contact-form input,
   .contact-form textarea {
     font-size: 16px;
+    padding: 12px;
   }
 
   .contact-form button {
     font-size: 16px;
+    padding: 10px;
   }
 }
 
-/* ✅ Responsive for phones */
+/* ✅ Responsive for Phones */
 @media (max-width: 480px) {
   .contact-container {
-    margin: 30px auto;
+    margin: auto auto;
     padding: 0 0.5rem;
   }
 
   .contact-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+    padding-bottom: 3px;
   }
 
   .contact-form input,
   .contact-form textarea {
     font-size: 14px;
     padding: 10px;
+  }
+
+  .contact-form textarea {
+    height: 100px;
   }
 
   .contact-form button {

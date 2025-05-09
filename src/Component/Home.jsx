@@ -4,9 +4,9 @@ import resume from "../Assets/Prakash Baskar_page-0001.jpg";
 const Home = () => {
   return (
     
-   <div id="Home">
+    <div id="Home">
        <div className="home-container pt-5">
-        <div className="pt-5">
+        <div className="">
          <img 
           //  src={profile}
            className="profile-image-home"
@@ -26,7 +26,7 @@ const Home = () => {
       </p>
 
       {/* Buttons */}
-      <div className="button-group">
+      <div className="button-group pt-1">
         <a href={resume} download="Prakash Baskar.pdf" className="cv-button">
           Download CV
         </a>

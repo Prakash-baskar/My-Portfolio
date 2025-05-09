@@ -11,8 +11,8 @@ const skills = [
   { name: "Bootstrap", level: 80 },
   { name: "Firebase", level: 65 },
   { name: "Jquery", level: 50},
-  { name: "GitHub", level: 80 },
   { name: "Ajax", level: 50 },
+  { name: "GitHub", level: 80 },
  
 ];
 
@@ -36,7 +36,7 @@ const Skill = () => {
   return (
     <div className="skill-container pt-5" id="Skill">
       <h2 className="skill-title pt-5">My Skills</h2>
-      <div className="skill-grid pt-5">
+      <div className="skill-grid ">
         {skills.map((skill, index) => (
           <div key={index} className="skill">
             <p className="skill-name">{skill.name}</p>

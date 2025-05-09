@@ -25,12 +25,12 @@ const About = () => {
       {/* Info Section */}
       <div className="info-section">
         <p><span>🎓 Degree:</span> Bachelor of Computer Applications (BCA)</p>
-        <p><span>📞 Phone:</span> +91 XXXXXXXXXX</p>
+        <p><span>📞 Phone:</span> +91 9384418760</p>
       </div>
 
       {/* Social Links */}
       <div className="button-container">
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="btn linkedin">
+        <a href="https://www.linkedin.com/in/prakash-baskar-b2a5b32b8/" target="_blank" rel="noopener noreferrer" className="btn linkedin">
           🔗 LinkedIn
         </a>
         <a href="mailto:prakashprakas2000@gmail.com" className="btn email">

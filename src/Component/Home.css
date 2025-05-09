@@ -1,6 +1,10 @@
 /* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
 .home-container {
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,6 +12,7 @@
   text-align: center;
   background: #f4f4f4;
   padding: 35px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .profile-image-home {
@@ -38,7 +43,7 @@
 }
 
 .button-group {
-  margin-top: 16px;
+  margin-top: 13px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -78,7 +83,7 @@
 /* Responsive Design */
 @media (max-width: 600px) {
   .home-container {
-   padding-top: 20px;
+   padding-top: 23px;
    
   }
   .profile-image {

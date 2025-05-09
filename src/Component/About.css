@@ -1,4 +1,7 @@
 /* Base styles for larger screens */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 .about-container {
   display: flex;
   flex-direction: column;
@@ -7,6 +10,9 @@
   text-align: center;
   background-color: #f9f9f9;
   padding: 35px;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .about-title {

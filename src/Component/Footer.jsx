@@ -1,13 +1,14 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
+import "./Footer.css"; 
 
 const Footer = () => {
   return (
-    <footer className="d-flex flex-column align-items-center bg-black text-white text-center py-4">
-      <p className="mb-3">&copy;All rights reserved by @prakash_baskar</p>
+    <footer className="footerbody d-flex flex-column align-items-center  text-center py-4">
+      <p className="mb-3">&copy; All rights reserved by @prakash_baskar</p>
 
-      {/* Social Media Icons */}
+     
       <div className="d-flex gap-3">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-facebook fa-lg"></i>
@@ -18,7 +19,7 @@ const Footer = () => {
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-instagram fa-lg"></i>
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white">
+        <a href="https://www.linkedin.com/in/prakash-baskar-b2a5b32b8/" target="_blank" rel="noopener noreferrer" className="text-white">
           <i className="fab fa-linkedin fa-lg"></i>
         </a>
       </div>

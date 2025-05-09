@@ -26,31 +26,36 @@ const Contact = () => {
     window.open(`https://wa.me/${phoneNumber}?text=${whatsappMessage}`, "_blank");
 
     // Reset the form
+    
     setFormData({
       name: "",
       email: "",
       subject: "",
       message: "",
     });
+ 
+  
   };
 
   return (
    <div id="Contact">
         <div  className="contact-container pt-4">
-        <h2 className="contact-title pt-5">Contact</h2>
-      <form onSubmit={handleSubmit} className="contact-form">
+        <h2 className="contact-title pt-5 ">Contact</h2>
+      <form onSubmit={handleSubmit} className="contact-form pt-5" >
+    
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder="Your name"
           value={formData.name}
           onChange={handleChange}
           required
         />
+        
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder="Your email"
           value={formData.email}
           onChange={handleChange}
           required
@@ -65,7 +70,7 @@ const Contact = () => {
         />
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder="Your message"
           value={formData.message}
           onChange={handleChange}
           required
