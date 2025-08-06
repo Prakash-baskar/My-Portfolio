@@ -1,7 +1,21 @@
-/* Home.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
+.home-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: fadeInBg 2s ease-in;
+}
 
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .home-container {
   height: 100vh;
@@ -10,40 +24,48 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #f4f4f4;
-  padding: 35px;
   font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  padding: 30px;
+}
+
+.image-wrapper {
+  animation: fadeInUp 1.5s ease;
 }
 
 .profile-image-home {
-  
-  width: 200px;
-  height: 200px;
-  border-radius: 60%;
-  border: 4px solid #3b82f6;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.name {
+.animated-name {
+  font-size: 36px;
+  font-weight: 700;
   margin-top: 16px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
+  animation: fadeInDown 1s ease;
 }
 
-.title {
-  font-size: 18px;
-  color: #2563eb;
+.animated-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #facc15;
+  animation: fadeInDown 1.2s ease;
 }
 
-.bio {
+.animated-bio {
   margin-top: 10px;
-  max-width: 400px;
-  color: #555;
+  max-width: 500px;
+  font-size: 16px;
+  color: #e5e5e5;
+  animation: fadeInUp 1.5s ease;
 }
 
 .button-group {
-  margin-top: 13px;
+  margin-top: 20px;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -51,20 +73,21 @@
 }
 
 .cv-button,
-.linkedin-button {
+.linkedin-button,
+.about-button {
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
   border: none;
-  cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .cv-button {
   background-color: #2563eb;
-  color: white;
+  color: #fff;
 }
 
 .cv-button:hover {
@@ -80,72 +103,68 @@
   background-color: #005582;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  .home-container {
-   padding-top: 23px;
-   
+.about-button {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.about-button:hover {
+  background-color: #047857;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  .profile-image {
-    width: 100px;
-    height: 100px;
-  }
-  .name {
-    font-size: 20px;
-  }
-  .title {
-    font-size: 16px;
-  }
-  .bio {
-    font-size: 14px;
-    max-width: 300px;
-  }
-  .cv-button, .linkedin-button {
-    font-size: 14px;
-    padding: 8px 16px;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .home-container {
-    padding: 20px 10px;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* Responsive */
+@media (max-width: 600px) {
   .profile-image-home {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 3px solid #3b82f6;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
   }
 
-  .name {
-    font-size: 18px;
-    margin-top: 12px;
+  .animated-name {
+    font-size: 24px;
   }
 
-  .title {
+  .animated-title {
+    font-size: 16px;
+  }
+
+  .animated-bio {
     font-size: 14px;
-  }
-
-  .bio {
-    font-size: 13px;
-    max-width: 100%;
-    padding: 0 5px;
-    margin-top: 8px;
+    max-width: 90%;
   }
 
   .button-group {
     flex-direction: column;
     gap: 12px;
-    width: 100%;
-    margin-top: 12px;
   }
 
   .cv-button,
-  .linkedin-button {
+  .linkedin-button,
+  .about-button {
+    width: 100%;
     font-size: 14px;
     padding: 10px;
-    width: 100%;
   }
 }
