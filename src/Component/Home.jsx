@@ -56,10 +56,10 @@ const Home = () => {
         
 
         <h1 className="animated-name">PRAKASH</h1>
-        <h2 className="animated-title">Passionate Frontend Developer & Full Stack Developer</h2>
+        <h2 className="animated-title">Frontend Developer & Web Developer</h2>
 
         <p className="animated-bio">
-          Crafting seamless and responsive web experiences using <strong>React, Node.js, MongoDB</strong> and modern tools.
+          Crafting seamless and responsive web experiences using <strong>React, Redux, Javascript</strong> and modern tools.
         </p>
 
         <div className="button-group pt-1">

@@ -55,6 +55,13 @@ const MyNavbar = () => {
             Skills
           </a>
           <a
+            href="#Services"
+            onClick={(e) => handleScroll(e, "Services")}
+            className="custom-link"
+          >
+            Services
+          </a>
+          <a
             href="#Contact"
             onClick={(e) => handleScroll(e, "Contact")}
             className="custom-link"

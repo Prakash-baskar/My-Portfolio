@@ -1,4 +1,32 @@
-.footerbody{
-    background-color:  #1E1E2F;
-    color: white;
+.footerbody {
+  background-color: #222;
+  color: white;
+  position: relative;
+  padding-bottom: 60px; /* give space for the arrow */
+}
+
+.arrow-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  animation: bounce 1s infinite;
+  color: rgb(118, 103, 250);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.arrow-icon:hover {
+  transform: scale(1.2);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }

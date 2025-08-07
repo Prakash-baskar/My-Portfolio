@@ -1,18 +1,27 @@
 import React, { useEffect, useState } from "react";
-import "./Skill.css"; 
+import "./Skill.css";
+import { FaCss3Alt, FaGithub, FaReact } from "react-icons/fa";
+import { DiFirebase, DiJavascript, DiJqueryLogo } from "react-icons/di";
+import { TbBrandRedux } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TiHtml5 } from "react-icons/ti";
+import { FaBootstrap } from "react-icons/fa6";
+
+
+
 
 const skills = [
-  { name: "React", level: 90 },
-  { name: "JavaScript", level: 90 },
-  { name: "Redux", level: 90 },
-  { name: "CSS", level: 95 },
-  { name: "TypeScript", level: 65 },
-  { name: "HTML", level: 95 },
-  { name: "Bootstrap", level: 85 },
-  { name: "Firebase", level: 70 },
-  { name: "Jquery", level: 50 },
-  { name: "Ajax", level: 50 },
-  { name: "GitHub", level: 85 },
+  { name: "React", level: 90, icon: <FaReact size={17} /> },
+  { name: "JavaScript", level: 90, icon: <DiJavascript size={17} /> },
+  { name: "Redux", level: 90, icon: <TbBrandRedux size={17} /> },
+  { name: "CSS", level: 95, icon: <FaCss3Alt size={17} /> },
+  { name: "TypeScript", level: 65, icon: <BiLogoTypescript size={17} /> },
+  { name: "HTML", level: 95, icon: <TiHtml5 size={17} /> },
+  { name: "Bootstrap", level: 85, icon: <FaBootstrap size={17} /> },
+  { name: "Firebase", level: 85, icon: <DiFirebase size={17} /> },
+  { name: "Jquery", level: 85, icon: <DiJqueryLogo size={17} /> },
+  // { name: "Ajax", level: 50, icon: <Zap size={17} /> },
+  { name: "GitHub", level: 85, icon: <FaGithub size={17} /> },
 ];
 
 const Skill = () => {
@@ -38,7 +47,10 @@ const Skill = () => {
       <div className="skill-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill fade-in">
-            <p className="skill-name">{skill.name}</p>
+            <div className="skill-header">
+              <span className="skill-icon">{skill.icon}</span>
+              <p className="skill-name mb-1">{skill.name}</p>
+            </div>
             <div className="progress-bar">
               <div
                 className="progress-fill animated"

@@ -34,6 +34,7 @@ import Project from './Component/Project'
 import Contact from './Component/Contact'
 import Skill from './Component/Skill'
 import Footer from './Component/Footer'
+import Service from './Component/Service'
 
 
 const App = () => {
@@ -45,6 +46,7 @@ const App = () => {
       < About />
       < Project />
       < Skill />
+      < Service />
       < Contact />
       < Footer />
       </div>

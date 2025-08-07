@@ -49,12 +49,12 @@ import profileImage from "../Assets/profile-removebg-preview.png"; // Add your i
 
 const About = () => {
   return (
-    <div id="About" className="about-grid-container">
+    <div id="About" className="about-grid-container ">
       <div className="about-image-section">
         <img src={profileImage} alt="Prakash Baskar" className="about-profile-image" />
       </div>
 
-      <div className="about-text-section">
+      <div className="about-text-section pt-5">
         <h2 className="about-heading">About</h2>
         <p className="intro-text">
           I am a <strong>Front-End Web Developer</strong> with a strong interest in creating dynamic and
